@@ -40,37 +40,73 @@
     <!-- ========== HERO SECTION ========== -->
     <section class="hero" id="hero">
         <div class="hero-content">
+
+            <!-- Image Left -->
             <div class="hero-image-wrapper">
-                <img src="assets/images/profile.jpg" alt="Leah Mae Agrabio" class="hero-img">
+                <img src="assets/images/profile.jpg" 
+                     alt="Leah Mae Agrabio" 
+                     class="hero-img">
                 <div class="hero-img-ring"></div>
             </div>
+
+            <!-- Text Right -->
             <div class="hero-text">
+
+                <!-- Editorial Label -->
+                <div class="hero-issue">
+                    <span>Portfolio</span>
+                </div>
+
                 <p class="hero-greeting">Hello, I'm 👋</p>
-                <h1 class="hero-name">Leah Mae Agrabio</h1>
-                <p class="hero-nickname">also known as <span>Yami</span> or <span>Lee</span></p>
+
+                <h1 class="hero-name">
+                    Leah Mae<br>
+                    <span>Agrabio</span>
+                </h1>
+
+                <p class="hero-nickname">
+                    also known as <span>Yami</span> or <span>Lee</span>
+                </p>
+
+                <div class="hero-divider"></div>
+
                 <p class="hero-course">Bachelor of Elementary Education</p>
-                <p class="hero-school">San Pedro College of Business Administration</p>
+                <p class="hero-school">
+                    San Pedro College of Business Administration
+                </p>
+
                 <div class="hero-tagline">
                     <i class="fas fa-quote-left"></i>
                     <p>"Inspire passion, discipline, and joy ❤️"</p>
                     <i class="fas fa-quote-right"></i>
                 </div>
+
                 <div class="hero-btns">
-                    <a href="#about" class="btn btn-primary">Get to Know Me</a>
-                    <a href="#achievements" class="btn btn-outline">My Achievements</a>
+                    <a href="#about" class="btn btn-primary">
+                        Get to Know Me
+                    </a>
+                    <a href="#achievements" class="btn btn-outline">
+                        My Achievements
+                    </a>
                 </div>
+
             </div>
         </div>
+
+        <!-- Scroll Indicator -->
         <div class="hero-scroll">
-            <span>Scroll Down</span>
+            <span>Scroll</span>
             <i class="fas fa-chevron-down"></i>
         </div>
-    </nav>
+    </section>
 
     <!-- ========== ABOUT SECTION ========== -->
     <section class="about" id="about">
         <div class="container">
             <h2 class="section-title">About Me <span>🌸</span></h2>
+            <p class="section-subtitle">
+                Passionate educator, dancer, and lifelong learner
+            </p>
             <div class="about-content">
                 <div class="about-card">
                     <p>Hi! I'm <strong>Leah Mae Agrabio</strong>, an incoming 4th year 
@@ -112,6 +148,9 @@
     <section class="achievements" id="achievements">
         <div class="container">
             <h2 class="section-title">Achievements <span>🏆</span></h2>
+            <p class="section-subtitle">
+                Recognition and awards throughout my academic journey
+            </p>
 
             <!-- 2nd Year -->
             <div class="achievement-year">
@@ -235,93 +274,136 @@
     <section class="teaching" id="teaching">
         <div class="container">
             <h2 class="section-title">Teaching Experience <span>📚</span></h2>
-            <p class="section-subtitle">Hands-on demo teaching experience since 1st year</p>
+            <p class="section-subtitle">
+                Hands-on demo teaching experience since 1st year
+            </p>
 
-            <!-- 1st Year -->
-            <div class="teaching-year">
-                <div class="teaching-year-label">1st Year</div>
-                <div class="teaching-cards">
-                    <div class="teaching-card">
-                        <span class="subject-tag">Linguistics</span>
-                        <p>Introduction to Linguistics: Vocabulary Words</p>
+            <div class="slider-wrapper">
+
+                <!-- Tab Buttons -->
+                <div class="slider-tabs">
+                    <button class="slider-tab active" 
+                            onclick="showSlide(0)">1st Year</button>
+                    <button class="slider-tab" 
+                            onclick="showSlide(1)">2nd Year</button>
+                    <button class="slider-tab" 
+                            onclick="showSlide(2)">3rd Year</button>
+                </div>
+
+                <!-- Slide 1 - 1st Year -->
+                <div class="slide active">
+                    <div class="slide-header">
+                        <h3 class="slide-year-title">1st Year 🌱</h3>
+                        <p class="slide-year-sub">The beginning of the journey</p>
                     </div>
-                    <div class="teaching-card">
-                        <span class="subject-tag">Home Economics</span>
-                        <p>Home Economics 1: Sewing Demo</p>
-                    </div>
-                    <div class="teaching-card">
-                        <span class="subject-tag">Reading</span>
-                        <p>Developmental Reading 1: PHIL IRI</p>
-                    </div>
-                    <div class="teaching-card highlight-card">
-                        <span class="subject-tag nstp">NSTP</span>
-                        <p>Generosity — Pahina Pag-asa 📖</p>
+                    <div class="teaching-cards">
+                        <div class="teaching-card">
+                            <span class="subject-tag">Linguistics</span>
+                            <p>Introduction to Linguistics: Vocabulary Words</p>
+                        </div>
+                        <div class="teaching-card">
+                            <span class="subject-tag">Home Economics</span>
+                            <p>Home Economics 1: Sewing Demo</p>
+                        </div>
+                        <div class="teaching-card">
+                            <span class="subject-tag">Reading</span>
+                            <p>Developmental Reading 1: PHIL IRI</p>
+                        </div>
+                        <div class="teaching-card highlight-card">
+                            <span class="subject-tag nstp">NSTP</span>
+                            <p>Generosity — Pahina Pag-asa 📖</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- 2nd Year -->
-            <div class="teaching-year">
-                <div class="teaching-year-label">2nd Year</div>
-                <div class="teaching-cards">
-                    <div class="teaching-card">
-                        <span class="subject-tag">Balarila</span>
-                        <p>Pangatnig</p>
+                <!-- Slide 2 - 2nd Year -->
+                <div class="slide">
+                    <div class="slide-header">
+                        <h3 class="slide-year-title">2nd Year 📖</h3>
+                        <p class="slide-year-sub">Growing through experience</p>
                     </div>
-                    <div class="teaching-card">
-                        <span class="subject-tag">Masining</span>
-                        <p>Masining na Pagpapahayag: Pang-Ukol</p>
-                    </div>
-                    <div class="teaching-card">
-                        <span class="subject-tag">Reading</span>
-                        <p>Developmental Reading 2: Micro Demo — Habitat, Grade 3</p>
-                    </div>
-                    <div class="teaching-card">
-                        <span class="subject-tag">Facilitating</span>
-                        <p>Facilitating Learning: Pang-Ugnay</p>
-                    </div>
-                    <div class="teaching-card">
-                        <span class="subject-tag">Panitikan</span>
-                        <p>Panitikan: Pang-Ugnay</p>
-                    </div>
-                    <div class="teaching-card">
-                        <span class="subject-tag">Ed Tech</span>
-                        <p>Ed Tech 2: Ang Wastong Paggamit ng AT NANG</p>
-                    </div>
-                    <div class="teaching-card">
-                        <span class="subject-tag">Learning Gaps</span>
-                        <p>Addressing Learning Gaps: Observation</p>
+                    <div class="teaching-cards">
+                        <div class="teaching-card">
+                            <span class="subject-tag">Balarila</span>
+                            <p>Pangatnig</p>
+                        </div>
+                        <div class="teaching-card">
+                            <span class="subject-tag">Masining</span>
+                            <p>Masining na Pagpapahayag: Pang-Ukol</p>
+                        </div>
+                        <div class="teaching-card">
+                            <span class="subject-tag">Reading</span>
+                            <p>Developmental Reading 2: Micro Demo — Habitat, Grade 3</p>
+                        </div>
+                        <div class="teaching-card">
+                            <span class="subject-tag">Facilitating</span>
+                            <p>Facilitating Learning: Pang-Ugnay</p>
+                        </div>
+                        <div class="teaching-card">
+                            <span class="subject-tag">Panitikan</span>
+                            <p>Panitikan: Pang-Ugnay</p>
+                        </div>
+                        <div class="teaching-card">
+                            <span class="subject-tag">Ed Tech</span>
+                            <p>Ed Tech 2: Ang Wastong Paggamit ng AT NANG</p>
+                        </div>
+                        <div class="teaching-card">
+                            <span class="subject-tag">Learning Gaps</span>
+                            <p>Addressing Learning Gaps: Observation</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- 3rd Year -->
-            <div class="teaching-year">
-                <div class="teaching-year-label">3rd Year</div>
-                <div class="teaching-cards">
-                    <div class="teaching-card">
-                        <span class="subject-tag">Integrative</span>
-                        <p>Integrative Teaching: Go, Grow, Glow Foods</p>
+                <!-- Slide 3 - 3rd Year -->
+                <div class="slide">
+                    <div class="slide-header">
+                        <h3 class="slide-year-title">3rd Year 🏆</h3>
+                        <p class="slide-year-sub">Excellence in teaching</p>
                     </div>
-                    <div class="teaching-card">
-                        <span class="subject-tag">Principles</span>
-                        <p>Principles of Teaching 1: Parts of the Plant and Their Functions</p>
-                    </div>
-                    <div class="teaching-card">
-                        <span class="subject-tag">Collaborative</span>
-                        <p>Collaborative Learning: Peer Teaching — Living and Non-Living Things</p>
-                    </div>
-                    <div class="teaching-card">
-                        <span class="subject-tag">Lesson Planning</span>
-                        <p>Observation and Lesson Planning: Pabula — Ang Tatlong Biik</p>
-                    </div>
-                    <div class="teaching-card">
-                        <span class="subject-tag">Principles</span>
-                        <p>Principles of Teaching 2: Math — Addition and Subtraction, Grade 1</p>
+                    <div class="teaching-cards">
+                        <div class="teaching-card">
+                            <span class="subject-tag">Integrative</span>
+                            <p>Integrative Teaching: Go, Grow, Glow Foods</p>
+                        </div>
+                        <div class="teaching-card">
+                            <span class="subject-tag">Principles</span>
+                            <p>Principles of Teaching 1: Parts of the Plant 
+                            and Their Functions</p>
+                        </div>
+                        <div class="teaching-card">
+                            <span class="subject-tag">Collaborative</span>
+                            <p>Collaborative Learning: Peer Teaching — 
+                            Living and Non-Living Things</p>
+                        </div>
+                        <div class="teaching-card">
+                            <span class="subject-tag">Lesson Planning</span>
+                            <p>Observation and Lesson Planning: 
+                            Pabula — Ang Tatlong Biik</p>
+                        </div>
+                        <div class="teaching-card">
+                            <span class="subject-tag">Principles</span>
+                            <p>Principles of Teaching 2: Math — 
+                            Addition and Subtraction, Grade 1</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+                <!-- Slider Navigation -->
+                <div class="slider-nav">
+                    <button class="slider-btn" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="slider-dots">
+                        <div class="dot active" onclick="showSlide(0)"></div>
+                        <div class="dot" onclick="showSlide(1)"></div>
+                        <div class="dot" onclick="showSlide(2)"></div>
+                    </div>
+                    <button class="slider-btn" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+            </div>
         </div>
     </section>
 
@@ -329,6 +411,11 @@
     <section class="projects" id="projects">
         <div class="container">
             <h2 class="section-title">Projects <span>🌟</span></h2>
+            <p class="section-subtitle">
+                Meaningful works I'm proud of
+            </p>
+
+            <!-- Pahina Pag-asa -->
             <div class="project-spotlight">
                 <div class="project-icon">📖</div>
                 <div class="project-info">
@@ -357,7 +444,9 @@
                 <div class="project-icon">🎓</div>
                 <div class="project-info">
                     <div class="project-badge">Thesis Research</div>
-                    <h3>Visual Communication & Literature Learning</h3>
+                    <h3>The Relationship Between Visual Communication 
+                    Styles and Literature Learning Among ASSH Students 
+                    of Muntinlupa National Highschool</h3>
                     <p class="project-year">2026</p>
                     <p class="project-desc">
                         <strong>"The Impact of Visual Communication Styles on Learning 
@@ -373,6 +462,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -380,34 +470,42 @@
     <section class="skills" id="skills">
         <div class="container">
             <h2 class="section-title">Skills <span>✨</span></h2>
+            <p class="section-subtitle">
+                What I bring to the classroom and beyond
+            </p>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <div class="skill-icon">🎓</div>
+                    <span class="skill-icon">🎓</span>
                     <h4>Teaching</h4>
-                    <p>Experienced in demo teaching across multiple subjects and grade levels</p>
+                    <p>Experienced in demo teaching across multiple 
+                    subjects and grade levels</p>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon">💃</div>
+                    <span class="skill-icon">💃</span>
                     <h4>Dancing</h4>
-                    <p>Passionate dancer bringing energy and creativity to every performance</p>
+                    <p>Passionate dancer bringing energy and creativity 
+                    to every performance</p>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon">📚</div>
+                    <span class="skill-icon">📚</span>
                     <h4>Reading</h4>
-                    <p>Avid reader with a love for books across different genres</p>
+                    <p>Avid reader with a love for books across 
+                    different genres</p>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon">📓</div>
+                    <span class="skill-icon">📓</span>
                     <h4>Journal Writing</h4>
-                    <p>Expressive writer who documents thoughts, reflections, and ideas</p>
+                    <p>Expressive writer who documents thoughts, 
+                    reflections, and ideas</p>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon">💻</div>
+                    <span class="skill-icon">💻</span>
                     <h4>ICT Skills</h4>
-                    <p>Award-winning in ICT and PowerPoint Presentation in teaching</p>
+                    <p>Award-winning in ICT and PowerPoint 
+                    Presentation in teaching</p>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon">🎨</div>
+                    <span class="skill-icon">🎨</span>
                     <h4>Instructional Design</h4>
                     <p>Best in Instructional Materials — Overall 2026</p>
                 </div>
@@ -419,7 +517,9 @@
     <section class="contact" id="contact">
         <div class="container">
             <h2 class="section-title">Get in Touch <span>💌</span></h2>
-            <p class="section-subtitle">Feel free to connect with me! 🌸</p>
+            <p class="section-subtitle">
+                Feel free to connect with me! 🌸
+            </p>
             <div class="contact-cards">
                 <a href="https://www.facebook.com/leahmaee.agrabio" 
                    target="_blank" class="contact-card facebook">
@@ -447,4 +547,7 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src=
+    <script src="script.js"></script>
+
+</body>
+</html>
